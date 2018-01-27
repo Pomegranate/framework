@@ -1,0 +1,35 @@
+{
+  "name": "@pomegranate/framework",
+  "version": "0.0.0",
+  "description": "The main Pomegranate framework module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test FORCE_COLOR=1 tap -R spec --cov test/unit/*.js test/integration/**/*.js",
+    "test:report": "NODE_ENV=test FORCE_COLOR=1 tap -R spec --cov --coverage-report=lcov test/unit/*.js test/integration/**/*.js",
+    "test:file": "NODE_ENV=test FORCE_COLOR=1 tap -R spec"
+  },
+  "keywords": [
+    "Pomegranate",
+    "Pomegranate-structural"
+  ],
+  "author": "Jim Bulkowski <jim.b@paperelectron.com> (http://paperelectron.com)",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib/",
+    "docs/"
+  ],
+  "devDependencies": {
+    "@pomegranate/test-utils": "^0.3.0",
+    "fs-extra": "^5.0.0",
+    "tap": "^10.7.2"
+  },
+  "dependencies": {
+    "@pomegranate/framework-utils": "^0.2.2",
+    "@pomegranate/plugin-finder": "^1.0.2",
+    "@pomegranate/plugin-iterator": "^1.0.0",
+    "chalk": "^2.3.0",
+    "lodash": "^4.17.4",
+    "magnum-di": "^2.2.3"
+  }
+}
