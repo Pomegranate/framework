@@ -17,8 +17,8 @@ let Framework = null
  * @module index
  */
 
-module.exports = function(){
+module.exports = function(PomegranateDependencies){
   if(Framework instanceof Pomegranate) return Framework
-  Framework = new Pomegranate({dependencyDI, frameworkDI})
+  Framework = new Pomegranate(PomegranateDependencies)
   return Framework
 }

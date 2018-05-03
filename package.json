@@ -26,10 +26,11 @@
   },
   "dependencies": {
     "@pomegranate/framework-utils": "^0.2.2",
+    "@pomegranate/plugin-facade": "^1.0.3",
     "@pomegranate/plugin-finder": "^1.0.2",
     "@pomegranate/plugin-iterator": "^1.0.0",
     "chalk": "^2.3.0",
     "lodash": "^4.17.4",
-    "magnum-di": "^2.2.3"
+    "magnum-di": "^3.2.0"
   }
 }
