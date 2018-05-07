@@ -8,8 +8,6 @@
 'use strict';
 const Pomegranate = require('./lib/Pomegranate')
 const DI = require('magnum-di')
-const frameworkDI = new DI()
-const dependencyDI = new DI()
 
 let Framework = null
 /**
